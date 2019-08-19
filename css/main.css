@@ -2,8 +2,7 @@
     box-sizing: inherit;
 }
 
-/* The CSS box-sizing property allows us to include the
-padding and border in an element's total width and height. */
+/* The CSS box-sizing property allows us to include the padding and border in an element's total width and height. */
 html {
     box-sizing: border-box;
 }
@@ -12,29 +11,21 @@ section {
     background-color: lightgray;
 }
 
-.header--xxlarge {
-    text-align: center;
-    background-color: lightskyblue;
-}
 
 .representative__info {
     display: flex;
-    width: 100%;
-    background-color: aqua;
-    flex-direction: row;
-    flex-wrap: wrap;
+/*    width: 100%; */
+    flex-flow: row nowrap;
     justify-content: space-evenly; 
-    flex: auto;
+
+    background-color: aqua;
 }
 
 .representative__info_photo {
-    flex: 1;
-    justify-content: center;
 }
 
 .representative__info_text {
-    flex: 1;
-    justify-content: center;
+    font-size: .9em;
     font-weight: bold;
 }
 
@@ -46,13 +37,19 @@ section {
     background-color: azure;
 }
 
-.representative__info, .representative__committees, .representative__legislation {
+.representative__info, .representative__committees, .representative__legislation, .header--xxlarge {
+    width: 100%;
     border: 1px solid black;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding: 15px;
-    margin: 5px;
+    border-bottom-left-radius: .3em;
+    border-bottom-right-radius: .3em;
+    border-top-left-radius: .3em;
+    border-top-right-radius: .3em;
+    padding: .8em;
+    margin: .3em;
     background-color: lightseagreen;
+}
+
+.header--xxlarge {
+    text-align: center;
+    background-color: lightskyblue;
 }
