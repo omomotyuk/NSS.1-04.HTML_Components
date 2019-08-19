@@ -36,7 +36,7 @@ section {
     background-color: azure;
 }
 
-.representative__info, .representative__committees, .representative__legislation, .header--xxlarge {
+.representative__info, .representative__committees, .representative__legislation, .header--xxlarge, .footer, .footer__navigation, .footer__media {
     width: 100%;
     border: 1px solid black;
     border-bottom-left-radius: .3em;
@@ -52,4 +52,22 @@ section {
     font-size: 1.2em;
     text-align: center;
     background-color: lightskyblue;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.footer__navigation, .footer__media {
+    background-color: lightskyblue;
+}
+
+.representative__committees li {
+    list-style-type: square;
+}
+
+.footer li {
+    list-style-type: circle;
 }
