@@ -36,6 +36,7 @@ section {
     background-color: azure;
 }
 
+/* panel view */
 .representative__info, .representative__committees, .representative__legislation, .header--xxlarge, .footer, .footer__navigation, .footer__media {
     width: 100%;
     border: 1px solid black;
@@ -70,4 +71,20 @@ section {
 
 .footer li {
     list-style-type: circle;
+}
+
+h3, h4 {
+    font-size: 130%;
+    text-align: center;
+
+    border-bottom-left-radius: .3em;
+    border-bottom-right-radius: .3em;
+    border-top-left-radius: .3em;
+    border-top-right-radius: .3em;
+
+    background-color: steelblue;
+}
+
+.footer--span {
+    font-style: italic;
 }
